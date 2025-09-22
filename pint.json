@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "lint:php": "vendor/bin/pint --test",
+    "format:php": "vendor/bin/pint"
+  }
+}

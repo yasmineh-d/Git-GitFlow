@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "lint:js": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "format:js": "prettier --write \"**/*.{js,ts,json,md,yml,yaml}\""
+  }
+}
