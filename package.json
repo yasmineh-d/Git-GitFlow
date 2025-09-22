@@ -1,6 +1,8 @@
 {
-  "scripts": {
-    "lint:js": "eslint . --ext .js,.ts --ignore-path .gitignore",
-    "format:js": "prettier --write \"**/*.{js,ts,json,md,yml,yaml}\""
+  "lint-staged": {
+    "*.{php}": ["composer lint:php --no-interaction", "git add"],
+    "*.{js,ts}": ["npm run lint:js", "npm run format:js", "git add"],
+    "*.md": ["npm run lint:md", "git add"],
+    "**/*.blade.php": ["npm run format:blade", "git add"]
   }
 }
